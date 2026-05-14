@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizzeria L'Oliva – Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <link rel="icon" type="image/png" href="static/css/imgs/Logo.png"/>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+
+  <!-- top nav sovrapposto all'hero -->
+  <nav id="topnav">
+    <img src="static/css/imgs/Logo.png" alt="Logo" class="topnav-logo"/>
+    <div class="topnav-links">
+      <a class="tnav-pill" href="#sec-menu">Menu</a>
+      <a class="tnav-pill" href="#reviews">Recensioni</a>
+      <a class="tnav-pill" href="#justeat">Ordina a Domicilio</a>
+      <a class="tnav-pill" href="#supplements">Supplementi</a>
+    </div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="static/css/imgs/Logo.png" alt="Logo Pizzeria L'Oliva"/>
+    </div>
+    <h1 class="hero-title">Pizzeria<em>L'Oliva</em></h1>
+    <p class="hero-tagline">Pura Tradizione Artigianale</p>
+    <a href="#sec-menu" class="hero-cta"><i class="bi bi-book-open"></i> Sfoglia il Menu</a>
+  </div>
+
+  <a class="scroll-hint" href="#sec-menu">
+    <span>menu</span>
+    <i class="bi bi-chevron-compact-down" style="font-size:1.15rem"></i>
+  </a>
+</section>
+
+
+<!-- ══ PHOTO BAND ══ -->
+<div class="photo-band" id="menu-start">
+  <img src="static/css/imgs/banner.png" alt="Esterno Pizzeria L'Oliva"/>
+  <div class="pb-overlay"></div>
+</div>
+
+<!-- ══ MENU (unica sezione con tutti gli accordion) ══ -->
+<section id="sec-menu">
+  <div class="sec-head">
+    <span class="sec-eyebrow">Tutta la nostra offerta</span>
+    <h2 class="sec-title">Menu Completo</h2>
+    <div class="sec-rule"><i class="bi bi-dot"></i></div>
+  </div>
+
+  <div class="menu-container">
+
+    <!-- ANTIPASTI -->
+    <div class="cat-divider"><span>Antipasti</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn open" onclick="toggle(this)">
+        
+        <span class="acc-label">Antipasti</span>
+        <span class="acc-count">10 piatti</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body open">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Le Olive</span><span class="dish-desc">Olive miste condite secondo tradizione.</span><span class="dish-price">€ 3,50</span></div>
+          <div class="dish"><span class="dish-name">Bruschette <small style="font-weight:400">(5 pezzi)</small></span><span class="dish-desc">Pane bruschettato con pomodoro fresco, olio extravergine d'oliva e origano.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Crostini Nduja <small style="font-weight:400">(5 pezzi)</small> <span class="tag tag-spicy">🌶 Piccante</span></span><span class="dish-desc">Crostini croccanti con 'nduja calabrese leggermente piccante.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Tagliere di Formaggi Freschi e Stagionati</span><span class="dish-desc">Selezione di formaggi misti freschi e stagionati.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Tagliere di Salumi</span><span class="dish-desc">Assortimento di salumi tipici selezionati.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Prosciutto Crudo</span><span class="dish-desc">Prosciutto crudo stagionato servito al piatto.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Prosciutto Crudo alla Barese</span><span class="dish-desc">Prosciutto crudo accompagnato da specialità tipiche baresi.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Mozzarella di Bufala <small style="font-weight:400">(250 g)</small></span><span class="dish-desc">Mozzarella di bufala fresca servita al naturale.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Carpaccio di Bresaola</span><span class="dish-desc">Bresaola con rucola fresca, scaglie di grana e olio extravergine d'oliva.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Antipasto della Casa <small style="font-weight:400">(6 portate – min. 2 persone)</small></span><span class="dish-desc">Selezione di specialità della casa servite in più portate.</span><span class="dish-price">€ 9,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCROCCHIARELLE -->
+    <div class="cat-divider" style="margin-top:.8rem"><span>Scrocchiarelle Farcite</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Scrocchiarelle Farcite</span>
+        <span class="acc-count">3 piatti</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Stracciatella, Mortadella e Granella di Pistacchio</span><span class="dish-desc">Scrocchiarella farcita con stracciatella fresca, mortadella e granella di pistacchio.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Stracciatella e Capocollo di Martina Franca</span><span class="dish-desc">Scrocchiarella con stracciatella fresca, capocollo di Martina Franca e pomodori secchi.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pomodorini, Rucola e Olio EVO</span><span class="dish-desc">Scrocchiarella con pomodorini freschi, rucola e olio extravergine d'oliva.</span><span class="dish-price">€ 8,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INSALATE -->
+    <div class="cat-divider" style="margin-top:.8rem"><span>Insalate</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Insalate</span>
+        <span class="acc-count">4 piatti</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Insalata alla Bresaola</span><span class="dish-desc">Misticanza fresca con bresaola, rucola e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Insalata Mista</span><span class="dish-desc">Insalata verde con pomodorini, cipolla, tonno e olive nere.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Insalata Semplice</span><span class="dish-desc">Insalata verde con rucola, pomodorini e olive nere.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Insalata di Bufala</span><span class="dish-desc">Insalata fresca con mozzarella di bufala, pomodorini e basilico.</span><span class="dish-price">€ 9,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZE CLASSICHE -->
+    <div class="cat-divider" style="margin-top:1.2rem"><span>Pizze Classiche</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Pizze Classiche</span>
+        <span class="acc-count">43 pizze</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Ciccio</span><span class="dish-desc">Olio extravergine d'oliva, sale e origano.</span><span class="dish-price">€ 3,50</span></div>
+          <div class="dish"><span class="dish-name">Piadina</span><span class="dish-desc">Piadina farcita a scelta (condita dopo cottura con ingredienti freschi).</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Marinara</span><span class="dish-desc">Pomodoro, olio extravergine d'oliva e origano.</span><span class="dish-price">€ 4,00</span></div>
+          <div class="dish"><span class="dish-name">Sfoglia Classica</span><span class="dish-desc">Mozzarella, pomodorini freschi, rucola e ricotta forte.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Margherita</span><span class="dish-desc">Pomodoro e mozzarella.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Capperi</span><span class="dish-desc">Pomodoro, mozzarella e capperi.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Wurstel</span><span class="dish-desc">Pomodoro, mozzarella e wurstel.</span><span class="dish-price">€ 6,50</span></div>
+          <div class="dish"><span class="dish-name">Funghi Freschi</span><span class="dish-desc">Pomodoro, mozzarella e funghi freschi.</span><span class="dish-price">€ 6,50</span></div>
+          <div class="dish"><span class="dish-name">Nduja <span class="tag tag-spicy">🌶 Piccante</span></span><span class="dish-desc">Pomodoro, mozzarella e 'nduja calabrese piccante.</span><span class="dish-price">€ 6,50</span></div>
+          <div class="dish"><span class="dish-name">Formaggio Francese</span><span class="dish-desc">Pomodoro, mozzarella e formaggio francese.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Calabrese <span class="tag tag-spicy">🌶 Piccante</span></span><span class="dish-desc">Pomodoro, mozzarella e salame piccante calabrese.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Salsiccia Fresca di Norcia</span><span class="dish-desc">Pomodoro, mozzarella e salsiccia fresca di Norcia.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Americana</span><span class="dish-desc">Pomodoro, mozzarella, wurstel e patatine fritte.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Prosciutto Crudo</span><span class="dish-desc">Pomodoro, mozzarella e prosciutto crudo stagionato.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Crudaiola</span><span class="dish-desc">Mozzarella, pomodorini freschi e ricotta marzotica.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Capricciosa</span><span class="dish-desc">Pomodoro, mozzarella, olive, funghi freschi, carciofi e prosciutto cotto.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Ortolana</span><span class="dish-desc">Pomodoro, mozzarella, funghi, peperoni, melanzane, zucchine e pan grattato.</span><span class="dish-price">€ 7,50</span></div>
+          <div class="dish"><span class="dish-name">Mozzarella di Bufala</span><span class="dish-desc">Pomodoro, mozzarella di bufala e olio extravergine d'oliva.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Tonno e Cipolla</span><span class="dish-desc">Pomodoro, mozzarella, tonno, cipolla e capperi.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Zucchine e Salame Piccante <span class="tag tag-spicy">🌶</span></span><span class="dish-desc">Pomodoro, mozzarella, zucchine, salame piccante e pan grattato.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Zucchine e Scamorza</span><span class="dish-desc">Mozzarella, zucchine, scamorza affumicata e pan grattato.</span><span class="dish-price">€ 7,50</span></div>
+          <div class="dish"><span class="dish-name">Fumé</span><span class="dish-desc">Pomodoro, mozzarella, scamorza affumicata e speck.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Burratina</span><span class="dish-desc">Pomodoro, mozzarella, burrata fresca, granella di pistacchio e scaglie di grana.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Radicchio</span><span class="dish-desc">Mozzarella, radicchio, stracciatella fresca e nocciole tritate.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Bufalina</span><span class="dish-desc">Mozzarella di bufala fresca, pomodorini e basilico.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Gorgonzola e Salame Piccante <span class="tag tag-spicy">🌶</span></span><span class="dish-desc">Pomodoro, mozzarella, gorgonzola e salame piccante.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Quattro Formaggi</span><span class="dish-desc">Pomodoro, mozzarella, gorgonzola, emmenthal e scamorza.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Quattro Stagioni</span><span class="dish-desc">Pomodoro, mozzarella, würstel, capricciosa, capperi, salame piccante e funghi.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Rape</span><span class="dish-desc">Mozzarella, rape saltate, pomodorini freschi e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Stracciatella e Prosciutto Crudo</span><span class="dish-desc">Pomodoro, mozzarella, prosciutto crudo stagionato e stracciatella fresca.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Gorgonzola</span><span class="dish-desc">Pomodoro, mozzarella e gorgonzola DOP.</span><span class="dish-price">€ 7,00</span></div>
+          <div class="dish"><span class="dish-name">Romana</span><span class="dish-desc">Pomodoro, mozzarella, capperi e acciughe.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">La Norcina</span><span class="dish-desc">Pomodoro, mozzarella, salsiccia fresca di Norcia e patatine con la buccia.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Cacio e Zucchine</span><span class="dish-desc">Mozzarella, cacio e pepe, zucchine gratinate e tonno.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Rio</span><span class="dish-desc">Pomodoro, mozzarella, tonno, gorgonzola e olive nere.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza L'Oliva <span class="tag tag-special">★ firma</span></span><span class="dish-desc">Pomodoro, mozzarella di bufala, pomodorini al forno, olive, basilico fresco e olio EVO.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Bacon e Formaggio Francese</span><span class="dish-desc">Pomodoro, mozzarella, bacon croccante e formaggio francese.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Bresaola</span><span class="dish-desc">Pomodoro, mozzarella, pomodorini freschi, bresaola, rucola e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Paesana</span><span class="dish-desc">Pomodoro, mozzarella, pomodorini freschi, prosciutto crudo alla barese, rucola e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Melanzane</span><span class="dish-desc">Pomodoro, mozzarella, melanzane grigliate, pomodori al forno e prosciutto crudo.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Funghi Porcini e Salsiccia Fresca di Norcia</span><span class="dish-desc">Pomodoro, mozzarella, funghi porcini, salsiccia fresca di Norcia e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Scamorza, Funghi Freschi e Pancetta</span><span class="dish-desc">Pomodoro, mozzarella, scamorza affumicata, funghi freschi, pancetta e pan grattato.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Peperoni</span><span class="dish-desc">Pomodoro, mozzarella, peperoni, tonno, gorgonzola e capperi..</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">L'Angoletto</span><span class="dish-desc">Pomodoro, mozzarella, salsiccia fresca di Norcia, pomodorini al forno e scaglie di grana.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Bufala e Norcia</span><span class="dish-desc">Pomodoro, mozzarella di bufala fresca con salsiccia fresca di Norcia.</span><span class="dish-price">€ 9,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZE SPECIALI -->
+    <div class="cat-divider" style="margin-top:.5rem"><span>Pizze Speciali</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Pizze Speciali</span>
+        <span class="acc-count">16 pizze</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Pizza Meghi</span><span class="dish-desc">Mozzarella di bufala, Philadelphia, salsiccia fresca di Norcia e pan grattato.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Lela</span><span class="dish-desc">Pomodoro, mozzarella di bufala, funghi cardoncelli, pancetta e pan grattato.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Iris</span><span class="dish-desc">Mozzarella di bufala, datterino giallo, pecorino, basilico fresco e grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Luana</span><span class="dish-desc">Mozzarella, prosciutto cotto, insalata con limone e scaglie di grana.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Pizza Alea</span><span class="dish-desc">Mozzarella, funghi chiodini, datterini freschi, pancetta e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">La Zampina</span><span class="dish-desc">Pomodoro, mozzarella, zampina, gorgonzola e patate al forno.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Natale</span><span class="dish-desc">Pomodoro, mozzarella, zucchine, emmenthal, salsiccia fresca di Norcia e pan grattato.</span><span class="dish-price">€ 8,50</span></div>
+          <div class="dish"><span class="dish-name">Pizza Silvio</span><span class="dish-desc">Mozzarella, mortadella, stracciatella fresca, scaglie di grana e granella di pistacchio.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Antonio</span><span class="dish-desc">Pomodoro, mozzarella, carne macinata, pomodorini al forno, emmenthal e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Gherti</span><span class="dish-desc">Mozzarella, crema di pistacchio, salsiccia fresca di Norcia, datterini gialli e scaglie di grana.</span><span class="dish-price">€ 9,50</span></div>
+          <div class="dish"><span class="dish-name">Pizza Cacio e Pepe</span><span class="dish-desc">Mozzarella, crema cacio e pepe, salsiccia fresca di Norcia, pomodorini freschi e rucola.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza al Guanciale</span><span class="dish-desc">Mozzarella, cipolla caramellata, Philadelphia, guanciale croccante e pecorino.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza al Salmone</span><span class="dish-desc">Mozzarella, zucchine gratinate, Philadelphia e salmone affumicato.</span><span class="dish-price">€ 9,50</span></div>
+          <div class="dish"><span class="dish-name">Pizza Andrea</span><span class="dish-desc">Base bianca con mozzarella, salame piccante, formaggio francese e crema di pistacchio.</span><span class="dish-price">€ 9,50</span></div>
+          <div class="dish"><span class="dish-name">Pizza al Capocollo di Martina Franca</span><span class="dish-desc">Pomodoro, mozzarella, pomodorini al forno, Philadelphia, capocollo di Martina Franca e scaglie di grana.</span><span class="dish-price">€ 9,00</span></div>
+          <div class="dish"><span class="dish-name">Pizza Sagelo</span><span class="dish-desc">Mozzarella, datterino giallo, datterino rosso, olive leccesi e Parmigiano Reggiano DOP.</span><span class="dish-price">€ 9,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZE GIGANTI -->
+    <div class="cat-divider" style="margin-top:.5rem"><span>Pizze Giganti</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Pizze Giganti</span>
+        <span class="acc-count">4 pizze</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Margherita Gigante</span><span class="dish-desc">Pomodoro e mozzarella.</span><span class="dish-price">€ 13,00</span></div>
+          <div class="dish"><span class="dish-name">L'Oliva Gigante <span class="tag tag-special">★ firma</span></span><span class="dish-desc">Pomodoro, mozzarella di bufala, pomodorini al forno, olive, basilico fresco e olio extravergine d'oliva.</span><span class="dish-price">€ 16,00</span></div>
+          <div class="dish"><span class="dish-name">Americana Gigante</span><span class="dish-desc">Pomodoro, mozzarella, wurstel e patatine fritte.</span><span class="dish-price">€ 16,00</span></div>
+          <div class="dish"><span class="dish-name">Farcita Gigante</span><span class="dish-desc">Pomodoro, mozzarella e farcitura a scelta.</span><span class="dish-price">€ 18,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROSTICCERIA -->
+    <div class="cat-divider" style="margin-top:1.2rem"><span>Rosticceria</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Rosticceria</span>
+        <span class="acc-count">11 piatti</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Patatine Fritte</span><span class="dish-desc">Croccanti patatine fritte dorate.</span><span class="dish-price">€ 4,00</span></div>
+          <div class="dish"><span class="dish-name">Patatine Fritte Chips</span><span class="dish-desc">Chips di patate croccanti.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Patatine Fritte con Buccia</span><span class="dish-desc">Patate rustiche con buccia croccanti.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Chips di Zucchine</span><span class="dish-desc">Zucchine tagliate sottili e fritte croccanti.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Sgagliozze <small style="font-weight:400">(10 pezzi)</small></span><span class="dish-desc">Tipiche frittelle di polenta della tradizione barese.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Arancini <small style="font-weight:400">(8 pezzi)</small></span><span class="dish-desc">Arancini dorati con ripieno filante.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Crocchette di Patate <small style="font-weight:400">(8 pezzi)</small></span><span class="dish-desc">Crocchette di patate artigianali.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Nuggets di Pollo <small style="font-weight:400">(6 pezzi)</small></span><span class="dish-desc">Bocconcini di pollo croccanti.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Triangoli di Patate con Speck <small style="font-weight:400">(3 pezzi)</small></span><span class="dish-desc">Triangoli di patate ripieni di speck.</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Chips di Patate Cacio e Pepe</span><span class="dish-desc">Chips croccanti con cacio e pepe.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Rosticceria Mista</span><span class="dish-desc">Assortimento di fritti misti.</span><span class="dish-price">€ 6,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERRINE CALDE -->
+    <div class="cat-divider" style="margin-top:.5rem"><span>Terrine Calde</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Terrine Calde</span>
+        <span class="acc-count">5 piatti</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Involtini di Speck e Scamorza</span><span class="dish-desc">Involtini caldi con speck e scamorza filante.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Involtini di Bacon e Formaggio Francese</span><span class="dish-desc">Involtini gratinati con bacon e formaggio francese.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Involtini di Zucchine con Mozzarella e Salame Piccante o Prosciutto Cotto</span><span class="dish-desc">Involtini di zucchine farciti con mozzarella e salame piccante o prosciutto cotto.</span><span class="dish-price">€ 8,00</span></div>
+          <div class="dish"><span class="dish-name">Salsiccia Fresca di Norcia</span><span class="dish-desc">Salsiccia fresca di Norcia cotta al forno.</span><span class="dish-price">€ 6,00</span></div>
+          <div class="dish"><span class="dish-name">Polpette al Sugo</span><span class="dish-desc">Polpette artigianali servite con salsa di pomodoro.</span><span class="dish-price">€ 8,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOLCI -->
+    <div class="cat-divider" style="margin-top:1.2rem"><span>Dolci</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Dolci</span>
+        <span class="acc-count">11 dolci</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Gelato al Limone</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Gelato al Cocco</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Soufflé al Cioccolato</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Cheesecake ai Frutti di Bosco</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Semifreddo al Tiramisù</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Semifreddo Rocher al Pistacchio o Cioccolato</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Cubano</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Tartufo Bianco o Nero</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Cassata Ricotta e Pistacchio</span><span class="dish-price">€ 5,00</span></div>
+          <div class="dish"><span class="dish-name">Bomboniere <small style="font-weight:400">(6 pezzi)</small></span><span class="dish-price">€ 4,00</span></div>
+          <div class="dish"><span class="dish-name">Bomboniere <small style="font-weight:400">(12 pezzi)</small></span><span class="dish-price">€ 7,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEVANDE -->
+    <div class="cat-divider" style="margin-top:.5rem"><span>Bevande</span></div>
+    <div class="acc-outer">
+      <button class="acc-btn" onclick="toggle(this)">
+        
+        <span class="acc-label">Bevande</span>
+        <span class="acc-count">18 voci</span>
+        <i class="bi bi-chevron-down acc-chevron"></i>
+      </button>
+      <div class="acc-body">
+        <div class="acc-inner">
+          <div class="dish"><span class="dish-name">Acqua <small style="font-weight:400">50cl</small></span><span class="dish-price">€ 1,00</span></div>
+          <div class="dish"><span class="dish-name">Acqua <small style="font-weight:400">50cl</small></span><span class="dish-price">€ 2,00</span></div>
+          <div class="dish"><span class="dish-name">Birra Peroni <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 2,00</span></div>
+          <div class="dish"><span class="dish-name">Birra Peroni <small style="font-weight:400">66cl</small></span><span class="dish-price">€ 3,00</span></div>
+          <div class="dish"><span class="dish-name">Coca-Cola, Fanta, Sprite, Lemon Soda, Chinotto</span><span class="dish-price">€ 2,00</span></div>
+          <div class="dish"><span class="dish-name">Thé alla Pesca o al Limone</span><span class="dish-price">€ 2,00</span></div>
+          <div class="dish"><span class="dish-name">Birra Nastro Azzurro <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 2,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Menabrea <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 2,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Menabrea <small style="font-weight:400">66cl</small></span><span class="dish-price">€ 4,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Nastro Azzurro <small style="font-weight:400">66cl</small></span><span class="dish-price">€ 3,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Beck's <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 2,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Heineken <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 2,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Moretti al Limone <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,00</span></div>
+          <div class="dish"><span class="dish-name">Birra Analcolica <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,00</span></div>
+          <div class="dish"><span class="dish-name">Birra Corona <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,50</span></div>
+          <div class="dish"><span class="dish-name">Birra Tennent's <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,50</span></div>
+          <div class="dish"><span class="dish-name">Peroni Gran Riserva Rossa <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,00</span></div>
+          <div class="dish"><span class="dish-name">Paulaner Salvator Rossa <small style="font-weight:400">33cl</small></span><span class="dish-price">€ 3,50</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /menu-container -->
+</section>
+<!-- ══ JUST EAT ══ -->
+<section id="justeat">
+  <div id="justeat-contet">
+    <div class="sec-head">
+    <span class="sec-eyebrow">La Tradizione Direttamente a Casa Tua</span>
+    <h2 class="sec-title">Ordina su Just Eat</h2>
+    <div class="sec-rule"><i class="bi bi-dot"></i></div>
+    </div>
+    <div style="text-align:center">
+      <a href="https://www.justeat.it/restaurants-pizzeria-loliva-bari/menu" target="_blank" rel="noopener" class="justeat-cta">Ordina Ora</a>
+    </div>
+  </div>
+  <div id="justeat-img">
+    <div class="img-container">
+      <img src="static/css/imgs/Justeat.png" alt="Ordina su Just Eat" width="256px" height="auto"/>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RECENSIONI ══ -->
+<section id="reviews">
+  <div class="sec-head">
+    <span class="sec-eyebrow">Cosa dicono di noi</span>
+    <h2 class="sec-title">Le Vostre Recensioni</h2>
+    <div class="sec-rule"><i class="bi bi-dot"></i></div>
+  </div>
+
+  <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-51b62dbc-f311-4835-b122-42fb1da395b5" data-elfsight-app-lazy></div>
+
+</section>
+
+<!-- ══ SUPPLEMENTI ══ -->
+<section id="supplements">
+  <div style="max-width:760px;margin:0 auto;padding:0 1rem">
+    <div class="sec-head" style="padding-top:0">
+      <span class="sec-eyebrow">Info utili</span>
+      <h2 class="sec-title">Supplementi</h2>
+      <div class="sec-rule"><i class="bi bi-dot"></i></div>
+    </div>
+    <div class="supp-grid">
+      <div class="supp-item"><span class="supp-name">Coperto</span><span class="supp-price">€ 2,00</span></div>
+      <div class="supp-item"><span class="supp-name">Servizio a Domicilio</span><span class="supp-price">€ 1,50</span></div>
+      <div class="supp-item"><span class="supp-name">Impasto senza Glutine</span><span class="supp-price">€ 3,00</span></div>
+      <div class="supp-item"><span class="supp-name">Impasto Napoletano</span><span class="supp-price">€ 1,50</span></div>
+      <div class="supp-item"><span class="supp-name">Impasto ai Cereali</span><span class="supp-price">€ 1,50</span></div>
+      <div class="supp-item"><span class="supp-name">Mozzarella senza Lattosio</span><span class="supp-price">€ 1,50</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <img src="static/css/imgs/Logo.png" alt="Logo Pizzeria L'Oliva" class="footer-logo"/>
+    <p class="footer-name">Pizzeria L'Oliva</p>
+    <p class="footer-info-line">
+      <a href="https://maps.google.com" target="_blank"><i class="bi bi-geo-alt-fill me-1" style="color:var(--amber)"></i>Via Mauro Amoruso Manzari, 80, 70124 Bari BA</a><br>
+      <a href="tel:+393285860604"><i class="bi bi-telephone-fill me-1" style="color:var(--amber)"></i>+39 328 586 0604</a><br>
+      <span>Lun–Dom (Sabato chiusi)&nbsp;·&nbsp; 18:00 – 23:30</span>
+    </p>
+    <div class="footer-icons">
+      <a class="ficon" href="https://www.google.it/maps/place/Pizzeria+L'Oliva/@41.1024501,16.8581919,17z/data=!4m15!1m8!3m7!1s0x1347e92af43bfe0b:0x5e3fbdb26b3cfabf!2sPizzeria+L'Oliva!8m2!3d41.1024221!4d16.8584237!10e1!16s%2Fg%2F11t_sjbf5z!3m5!1s0x1347e92af43bfe0b:0x5e3fbdb26b3cfabf!8m2!3d41.1024221!4d16.8584237!16s%2Fg%2F11t_sjbf5z?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" title="Google Maps"><i class="bi bi-map-fill"></i></a>
+      <a class="ficon" href="tel:+393285860604" title="Chiama"><i class="bi bi-telephone-fill"></i></a>
+    </div>
+    <p class="footer-copy">© 2026 Pizzeria L'Oliva · Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>
